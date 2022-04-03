@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-4"></div>
-            <div class="col-4">
+            <div class="col-4 lg-4 md-4 sm-12 xs-12">
                 <input type="text" id="cty" placeholder="enter the name of city" class="form-control mt-4">
                 <button class="btn btn-success form-control mt-4" onclick="fetchWeather()"> search</button>
             </div>
@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row">
             <div class="col-4"></div>
-            <div class="col-4 mt-4" id="result"></div>
+            <div class="col-4 mt-4 lg-4 md-4 sm-12 xs-12" id="result"></div>
             <div class="col-4"></div>
                    
         </div>
@@ -49,8 +49,8 @@
         let icon=data.weather[0].icon
     
         console.log(data);
-        let html_data=`<div class="card" style="width: 18rem;">
-            <div class="bg-secondary">
+        let html_data=`<div class="card lg-4 md-4 sm-12 xs-12" style="width: 100%;">
+            <div class="bg-light">
                 <img src="https://openweathermap.org/img/wn/${icon}.png">
                 </div>
             <div class="card-header">
